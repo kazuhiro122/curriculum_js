@@ -1,5 +1,10 @@
 let number = 1;
 while (number < 100) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        number++;
+        console.log("FizzBuzz!!");
+        continue;
+    }
     if (number % 3 === 0) {
         number++;
         console.log("Fizz!");
@@ -10,11 +15,7 @@ while (number < 100) {
         console.log("Buzz!");
         continue;
     }
-    if (number % 3 === 0 && number % 5 === 0) {
-        number++;
-        console.log("FizzBuzz!!");
-        continue;
-    }
+    
     console.log(number);
     number++;
 }
